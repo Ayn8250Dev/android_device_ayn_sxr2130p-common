@@ -6,5 +6,9 @@
   {
     "repository": "android_kernel_ayn_common-modules",
     "target_path": "kernel/ayn/common-modules"
+  },
+  {
+    "repository": "android_hardware_sony_timekeep",
+    "target_path": "hardware/sony/timekeep"
   }
 ]
