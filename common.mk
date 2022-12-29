@@ -150,6 +150,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 PRODUCT_PACKAGES += \
     android.hardware.thermal-service.qti
 
+# TimeKeep
+PRODUCT_PACKAGES += \
+    TimeKeep
+
 # Update engine
 PRODUCT_PACKAGES += \
     update_engine \
