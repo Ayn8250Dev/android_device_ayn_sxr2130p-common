@@ -28,5 +28,8 @@ PRODUCT_SHIPPING_API_LEVEL := $(BOARD_SHIPPING_API_LEVEL)
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# Storage
+$(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
+
 # Inherit from the proprietary files makefile.
 $(call inherit-product, vendor/ayn/sxr2130p-common/sxr2130p-common-vendor.mk)
