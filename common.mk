@@ -6,6 +6,9 @@
 # GMS
 PRODUCT_GMS_CLIENTID_BASE := android-uct
 
+# Partitions
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
 # Product characteristics
 PRODUCT_CHARACTERISTICS := tablet
 
