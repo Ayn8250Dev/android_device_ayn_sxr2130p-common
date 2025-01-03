@@ -14,6 +14,9 @@ PRODUCT_COPY_FILES += \
 # Kernel
 PRODUCT_ENABLE_UFFD_GC := true
 
+# Partitions
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
 # Product characteristics
 PRODUCT_CHARACTERISTICS := tablet
 
