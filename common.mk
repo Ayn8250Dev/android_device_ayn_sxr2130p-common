@@ -40,6 +40,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/tablet_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/tablet_core_hardware.xml
 
+# Init
+PRODUCT_PACKAGES += \
+    fstab.default \
+    fstab.default.vendor_ramdisk
+
 # Kernel
 PRODUCT_ENABLE_UFFD_GC := true
 
