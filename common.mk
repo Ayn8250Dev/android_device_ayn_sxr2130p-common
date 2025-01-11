@@ -57,6 +57,11 @@ PRODUCT_COPY_FILES += \
     kernel/ayn/qcs8550/modules.systemdlkm_blocklist.msm.kalama:$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules/system_dlkm.modules.blocklist
 
 # Partitions
+PRODUCT_PACKAGES += \
+    vendor_bt_firmware_mountpoint \
+    vendor_dsp_mountpoint \
+    vendor_firmware_mnt_mountpoint
+
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Product characteristics
