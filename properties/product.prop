@@ -12,6 +12,9 @@ aaudio.mmap_policy=2
 aaudio.mmap_exclusive_policy=2
 aaudio.hw_burst_min_usec=2000
 
+# eBPF
+ro.bpf.kver_override=5.10.239
+
 # Media
 media.stagefright.audio.deep=false
 
