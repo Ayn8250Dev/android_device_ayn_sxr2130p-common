@@ -159,6 +159,12 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     ueventd.qcom.rc
 
+# LiveDisplay
+PRODUCT_PACKAGES += \
+    vendor.lineage.livedisplay-service.sdm
+
+$(call soong_config_set_bool,livedisplay_sdm,enable_dm,false)
+
 # Media
 PRODUCT_PACKAGES += \
     init.qti.media.rc \
