@@ -1,0 +1,10 @@
+[
+  {
+    "repository": "android_kernel_ayn_sxr2130p",
+    "target_path": "kernel/ayn/sxr2130p"
+  },
+  {
+    "repository": "android_kernel_ayn_common-modules",
+    "target_path": "kernel/ayn/common-modules"
+  }
+]
