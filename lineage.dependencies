@@ -1,5 +1,9 @@
 [
   {
+    "repository": "android_hardware_ayn",
+    "target_path": "hardware/ayn"
+  },
+  {
     "repository": "android_kernel_ayn_sxr2130p",
     "target_path": "kernel/ayn/sxr2130p"
   },
