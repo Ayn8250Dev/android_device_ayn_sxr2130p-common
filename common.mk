@@ -43,7 +43,8 @@ PRODUCT_COPY_FILES += \
 # Init
 PRODUCT_PACKAGES += \
     fstab.qcom \
-    fstab.qcom.ramdisk
+    fstab.qcom.ramdisk \
+    init.qcom.recovery.rc
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
