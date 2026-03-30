@@ -106,6 +106,9 @@ PRODUCT_PACKAGES += \
 
 $(call soong_config_set_bool,QTI_GPT_UTILS,USE_BSG_FRAMEWORK,false)
 
+# Camera
+PRODUCT_NO_CAMERA := true
+
 # Dalvik
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
