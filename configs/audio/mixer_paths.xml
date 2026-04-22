@@ -825,6 +825,12 @@
     <path name="usb-headset">
     </path>
 
+    <path name="hdmi">
+    </path>
+
+    <path name="display-port">
+    </path>
+
     <path name="usb-headset-mic">
     </path>
 
