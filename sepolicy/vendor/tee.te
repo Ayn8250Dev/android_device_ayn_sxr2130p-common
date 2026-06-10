@@ -1,0 +1,1 @@
+allow tee vendor_rpmb_block_device:blk_file { read open };
