@@ -128,6 +128,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey
 
+# Fingerprint
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    BuildFingerprint=Razer/Nicole/Razer-Edge-WiFi:12/SKQ1.211103.001/172:user/release-keys
+
 # GMS
 PRODUCT_GMS_CLIENTID_BASE := android-uct
 
