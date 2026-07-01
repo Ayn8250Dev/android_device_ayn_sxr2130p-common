@@ -162,6 +162,9 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     ueventd.qcom.rc
 
+# ION
+$(call soong_config_set_bool,libion,legacy_impl,true)
+
 # Lineage Health
 PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
