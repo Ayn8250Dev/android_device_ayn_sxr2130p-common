@@ -228,7 +228,6 @@ vendor/lib64/libqdcm-json-mode-parser.so
 vendor/lib64/libqdcm-mode-parser.so
 vendor/lib64/libsnapdragoncolor-manager.so
 vendor/lib64/libsnapdragoncolor-qdcm.so
-vendor/lib64/libvmmem.so
 vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
 
 # Display (SDM)
