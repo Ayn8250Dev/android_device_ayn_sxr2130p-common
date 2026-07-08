@@ -1,1 +1,1 @@
-Common tree for the Ayn qcs8550 series of devices
+Common tree for the Ayn sxr2130 series of devices

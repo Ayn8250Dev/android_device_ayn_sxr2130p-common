@@ -53,7 +53,7 @@ PRODUCT_PACKAGES += \
     libvolumelistener \
     sound_trigger.primary.kalama
 
-AUDIO_HAL_DIR := hardware/qcom-caf/sm8550/audio/primary-hal
+AUDIO_HAL_DIR := hardware/qcom-caf/sm8250/audio/primary-hal
 CONFIG_HAL_SRC_DIR := $(AUDIO_HAL_DIR)/configs/kalama
 CONFIG_PAL_SRC_DIR := $(AUDIO_HAL_DIR)/../pal/configs/kalama
 
@@ -173,7 +173,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_ENABLE_UFFD_GC := true
 
 PRODUCT_COPY_FILES += \
-    kernel/ayn/qcs8550/modules.systemdlkm_blocklist.msm.kalama:$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules/system_dlkm.modules.blocklist
+    kernel/ayn/sxr2130p/modules.systemdlkm_blocklist.msm.kalama:$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules/system_dlkm.modules.blocklist
 
 # Keymint
 PRODUCT_PACKAGES += \
@@ -322,4 +322,4 @@ PRODUCT_PACKAGES += \
     firmware_WCNSS_qcom_cfg.ini_symlink
 
 # Inherit from the proprietary files makefile.
-$(call inherit-product, vendor/ayn/qcs8550-common/qcs8550-common-vendor.mk)
+$(call inherit-product, vendor/ayn/sxr2130p-common/sxr2130p-common-vendor.mk)

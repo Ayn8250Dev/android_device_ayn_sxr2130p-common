@@ -21,9 +21,9 @@ from extract_utils.main import (
 )
 
 namespace_imports = [
-    'device/ayn/qcs8550-common',
+    'device/ayn/sxr2130p-common',
     'hardware/ayn',
-    'hardware/qcom-caf/sm8550',
+    'hardware/qcom-caf/sm8250',
     'hardware/qcom-caf/wlan',
     'vendor/qcom/opensource/commonsys-intf/display',
     'vendor/qcom/opensource/commonsys/display',
@@ -83,7 +83,7 @@ blob_fixups: blob_fixups_user_type = {
 }  # fmt: skip
 
 module = ExtractUtilsModule(
-    'qcs8550-common',
+    'sxr2130p-common',
     'ayn',
     namespace_imports=namespace_imports,
     blob_fixups=blob_fixups,
