@@ -146,6 +146,14 @@ TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
+# Recovery modules - copy
+RECOVERY_KERNEL_MODULES := \
+    moorechip # to amend with proper names
+
+# Recovery modules - enable
+BOARD_RECOVERY_RAMDISK_KERNEL_MODULES_LOAD := \
+    moorechip # to amend with proper names
+
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
 TARGET_BOARD_PLATFORM := kona
