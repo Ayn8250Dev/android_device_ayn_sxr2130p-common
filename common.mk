@@ -195,6 +195,8 @@ PRODUCT_COPY_FILES += \
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml
 DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
+DEVICE_MANIFEST_FILE := \
+    $(LOCAL_PATH)/vintf/manifest.xml
 
 # WiFi
 PRODUCT_PACKAGES += \
