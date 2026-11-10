@@ -1,0 +1,51 @@
+# Audio
+#persist.speaker.prot.enable=false
+audio.offload.disable=1
+qcom.hw.aac.encoder=true
+ro.config.alarm_vol_default=15
+ro.config.media_vol_default=15
+ro.config.system_vol_default=15
+ro.config.vc_call_vol_default=6
+tunnel.audio.encode=true
+use.voice.path.for.pcm.voip=true
+
+# Bluetooth
+persist.vendor.btstack.aac_frm_ctl.enabled=true
+ro.bluetooth.library_name=libbluetooth_qti.so
+
+# Dalvik
+dalvik.vm.dex2oat64.enabled=true
+
+# Fwk detect
+ro.vendor.qti.va_aosp.support=1
+
+# Display
+debug.sf.enable_hwc_vds=1
+debug.sf.latch_unsignaled=1
+dev.pm.dyn_samplingrate=1
+persist.sys.force_sw_gles=1
+ro.opengles.version=196610
+ro.surface_flinger.running_without_sync_framework=true
+vendor.display.builtin_mirroring=true
+vendor.display.builtin_presentation=true
+
+# Media
+media.aac_51_output_enabled=true
+media.settings.xml=/vendor/etc/media_profiles_vendor.xml
+media.stagefright.enable-aac=true
+media.stagefright.enable-fma2dp=true
+media.stagefright.enable-http=true
+media.stagefright.enable-player=true
+media.stagefright.enable-qcp=true
+media.stagefright.enable-scan=true
+media.stagefright.thumbnail.prefer_hw_codecs=true
+mmp.enable.3g2=true
+persist.mm.enable.prefetch=true
+ro.media.recorder-max-base-layer-fps=60
+vendor.mm.enable.qcom_parser=16777215
+
+# Sensors
+persist.vendor.sensors.enable.mag_filter=true
+
+# System server
+arm64.memtag.process.system_server=off

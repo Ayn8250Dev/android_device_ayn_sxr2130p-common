@@ -46,6 +46,8 @@ TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml
 DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
+DEVICE_MANIFEST_FILE := \
+    $(COMMON_PATH)/vintf/manifest.xml
 
 # Kernel
 BOARD_BOOT_HEADER_VERSION := 2
@@ -94,12 +96,23 @@ TARGET_COPY_OUT_VENDOR := vendor
 BOARD_USES_QCOM_HARDWARE := true
 TARGET_BOARD_PLATFORM := kona
 
+# Properties
+PROPERTIES_PATH := $(COMMON_PATH)/properties
+TARGET_ODM_PROP += $(PROPERTIES_PATH)/odm.prop
+TARGET_PRODUCT_PROP += $(PROPERTIES_PATH)/product.prop
+TARGET_SYSTEM_PROP += $(PROPERTIES_PATH)/system.prop
+TARGET_VENDOR_PROP += $(PROPERTIES_PATH)/vendor.prop
+
 # Recovery
 BOARD_INCLUDE_RECOVERY_DTBO := true
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/init/fstab.qcom
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
+
+# Security patch level
+BOOT_SECURITY_PATCH := 2023-09-01
+VENDOR_SECURITY_PATCH := $(BOOT_SECURITY_PATCH)
 
 # SEPolicy
 include device/qcom/sepolicy_vndr/SEPolicy.mk
