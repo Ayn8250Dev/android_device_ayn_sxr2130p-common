@@ -98,6 +98,11 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     ueventd.qcom.rc
 
+# Media
+PRODUCT_PACKAGES += \
+    init.qti.media.rc \
+    init.qti.media.sh
+
 # Memtrack
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.memtrack-service
