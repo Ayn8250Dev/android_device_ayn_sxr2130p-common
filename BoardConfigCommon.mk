@@ -82,6 +82,8 @@ TARGET_KERNEL_CONFIG := \
     vendor/moorechip/kona_perf.config
 TARGET_KERNEL_SOURCE := kernel/ayn/sxr2130p
 
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
 
