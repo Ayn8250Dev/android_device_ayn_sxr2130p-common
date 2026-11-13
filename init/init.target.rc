@@ -168,3 +168,12 @@ service dcvs-sh /vendor/bin/init.qti.dcvs.sh
 
 on property:vendor.dcvs.prop=1
    start dcvs-sh
+
+# Cringe
+on property:init.svc.vendor.audio-hal=* && property:sys.audio.cringe=
+   setprop sys.audio.cringe 1
+   mount none /vendor/lib/hw/audio.primary.default.so /vendor/lib/hw/audio.primary.kona.so bind
+   mount none /vendor/lib64/hw/audio.primary.default.so /vendor/lib64/hw/audio.primary.kona.so bind
+   restart audioserver
+   stop vendor.adsprpcd_audiopd
+   stop vendor.adsprpcd
