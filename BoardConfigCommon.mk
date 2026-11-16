@@ -72,6 +72,12 @@ TARGET_KERNEL_CONFIG := \
     vendor/moorechip/kona_perf.config
 TARGET_KERNEL_SOURCE := kernel/ayn/sxr2130p
 
+# Kernel modules
+BOARD_RECOVERY_KERNEL_MODULES_LOAD := $(strip $(shell cat $(COMMON_PATH)/modules/modules.load.recovery))
+RECOVERY_KERNEL_MODULES := $(BOARD_RECOVERY_KERNEL_MODULES_LOAD)
+TARGET_KERNEL_EXT_MODULE_ROOT := kernel/ayn/common-modules
+TARGET_KERNEL_EXT_MODULES := .
+
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
 
