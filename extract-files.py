@@ -34,6 +34,8 @@ lib_fixups: lib_fixups_user_type = {
 blob_fixups: blob_fixups_user_type = {
     'vendor/etc/wifi/wpa_supplicant_overlay.conf': blob_fixup()
         .regex_replace('driver_param="no_rrm=1"', 'driver_param="no_rrm=1 use_p2p_group_interface=1"'),
+    'vendor/etc/sensors/hals.conf': blob_fixup()
+        .regex_replace('sensors.ssc.so', 'sensors.ayn.so'),
     'vendor/etc/media_codecs_c2.xml': blob_fixup()
         .regex_replace('.*media_codecs_(google_audio|google_c2|google_telephony|google_video).*\n', ''),
     'vendor/lib64/libdpps.so': blob_fixup()
