@@ -19,7 +19,14 @@ AB_OTA_POSTINSTALL_CONFIG += \
     FILESYSTEM_TYPE_vendor=ext4 \
     POSTINSTALL_OPTIONAL_vendor=true
 
+AB_OTA_POSTINSTALL_CONFIG += \
+    RUN_POSTINSTALL_odm=true \
+    POSTINSTALL_PATH_odm=bin/ayn_xbl_updater \
+    FILESYSTEM_TYPE_odm=ext4 \
+    POSTINSTALL_OPTIONAL_odm=false
+
 PRODUCT_PACKAGES += \
+    ayn_xbl_updater \
     checkpoint_gc \
     otapreopt_script
 
